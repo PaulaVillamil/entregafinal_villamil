@@ -1,0 +1,183 @@
+@mixin logos ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.recreo__logo {
+    width: 30%;
+    padding-top: 40px;
+
+    @media (min-width:576px) {
+        @include logos (200px, 230px)
+    }
+}
+
+.foto__recreo,
+.flex__img,
+.img_kids,
+.img_w,
+.img_portada,
+.img_tb {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width:576px) {
+        height: 65%
+    }
+
+    @media (min-width: 992px) {
+        height: 500px
+    }
+
+
+}
+
+.paso_1, 
+.paso_2, 
+.paso_3, 
+.paso_4,
+.contenedorServicios {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width:576px) {
+        height: 300px
+    }
+
+    @media (min-width: 992px) {
+        height: 200px
+    }
+}
+
+.footer__gif {
+    width: 20%;
+
+    @media (min-width:576px) {
+        width: 30%;
+    }
+
+    @media (min-width: 992px) {
+        width: 15%;
+    }
+}
+
+.header_desktop {
+    display: none;
+
+    @media (min-width:576px) {
+        width: 100%;
+        display: inline;
+        justify-content: center;
+    }
+
+}
+
+.header_mobile {
+    @media (min-width:576px) {
+        display: none;
+    }
+}
+
+.flex__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+
+    @media (min-width:576px) {
+        width: 100%;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding: 2%;
+        gap: 10px;
+    }
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding-right: 39%;
+
+    @media (min-width:576px) {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        gap: 10px;
+        padding: 0%;
+        padding-top: 20px;
+    }
+}
+
+.titulo_index {
+    display: none;
+
+    @media (min-width:992px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.p_recreo,
+.flex__p_about,
+.la_actividad,
+.p_workshop,
+.p_teambuilding,
+.p_kids {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+
+    @media (min-width:576px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media (min-width:992px) {
+        text-align: justify;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+
+footer {
+    display: grid;
+    grid-template-areas: "contacto""gif""favicon";
+    justify-items: center;
+
+    @media (min-width:992px) {
+        height: 120px;
+        display: grid;
+        grid-template-areas: "contacto gif favicon";
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+.footer__favicon {
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media (min-width:992px) {
+        height: 20%;
+    }
+}

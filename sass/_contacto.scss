@@ -1,0 +1,62 @@
+
+.flex__contacto {
+    grid-area: contacto;
+}
+
+.contenedor_servicios {
+    grid-area: conteiner;
+}
+
+.page_contacto {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "titulo" "conteiner";
+    justify-items: center;
+    gap: 5px;
+    padding-bottom: 200px;
+    padding-top: 0%;
+
+    }
+    
+    .card {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+.sectionReservas {
+
+
+
+
+
+                    
+                .imagen {
+                    height: 120px;
+                    width: 120px;
+                }
+                .div1 {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+
+                }
+
+                .boton_reserva {
+                    display: flex;
+                    margin: auto;
+                    margin-top: 20px;
+                    color: $color_ocre;
+                    background-color: $color_verde;
+                    padding: 8px;
+                    border-radius: 16px;
+                    border: none;
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    }
+                }
+            
+

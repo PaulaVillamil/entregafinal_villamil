@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: $color_blanco;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: $color_verde;
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer p {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: $color_verde;
+    font-size: 12px;
+    text-align: center;
+}
+
+header {
+    background-color: $color_verde;
+    width: 100%;
+}
+
+body {
+    background-color: $color_blanco;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: $color_verde;
+    font-size: 40px;
+}
+
+footer {
+    background-color: $color_ocre;
+}
+
+@mixin logos ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+ul {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex__titulo {
+    height: 180px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.recreo__index {
+    @include logos (100px, 100px);
+    display: flex;
+    align-content: center;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.titulo_index {
+    grid-area: titulo_index;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.recreo__logo {
+    grid-area: logo;
+}
+
+.flex__titulo {
+    grid-area: titulo;
+}
+
+.footer__gif {
+    grid-area: gif;
+}
+
+.footer__favicon {
+    grid-area: favicon;
+}

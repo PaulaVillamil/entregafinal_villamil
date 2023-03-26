@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(236, 219, 204);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgb(31, 64, 51);
+  font-size: 18px;
+  text-align: justify;
+}
+
+footer p {
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgb(31, 64, 51);
+  font-size: 12px;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(31, 64, 51);
+  width: 100%;
+}
+
+body {
+  background-color: rgb(236, 219, 204);
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  color: rgb(31, 64, 51);
+  font-size: 40px;
+}
+
+footer {
+  background-color: rgb(199, 129, 42);
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex__titulo {
+  height: 180px;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.recreo__index {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-content: center;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.titulo_index {
+  grid-area: titulo_index;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.recreo__logo {
+  grid-area: logo;
+}
+
+.flex__titulo {
+  grid-area: titulo;
+}
+
+.footer__gif {
+  grid-area: gif;
+}
+
+.footer__favicon {
+  grid-area: favicon;
+}
+
+.recreo__logo {
+  width: 30%;
+  padding-top: 40px;
+}
+@media (min-width: 576px) {
+  .recreo__logo {
+    width: 200px;
+    height: 230px;
+  }
+}
+
+.foto__recreo,
+.flex__img,
+.img_kids,
+.img_w,
+.img_portada,
+.img_tb {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .foto__recreo,
+  .flex__img,
+  .img_kids,
+  .img_w,
+  .img_portada,
+  .img_tb {
+    height: 65%;
+  }
+}
+@media (min-width: 992px) {
+  .foto__recreo,
+  .flex__img,
+  .img_kids,
+  .img_w,
+  .img_portada,
+  .img_tb {
+    height: 500px;
+  }
+}
+
+.paso_1,
+.paso_2,
+.paso_3,
+.paso_4 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .paso_1,
+  .paso_2,
+  .paso_3,
+  .paso_4 {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .paso_1,
+  .paso_2,
+  .paso_3,
+  .paso_4 {
+    height: 200px;
+  }
+}
+
+.footer__gif {
+  width: 20%;
+}
+@media (min-width: 576px) {
+  .footer__gif {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .footer__gif {
+    width: 15%;
+  }
+}
+
+.header_desktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .header_desktop {
+    width: 100%;
+    display: inline;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .header_mobile {
+    display: none;
+  }
+}
+
+.flex__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+@media (min-width: 576px) {
+  .flex__container {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+    gap: 10px;
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-right: 39%;
+}
+@media (min-width: 576px) {
+  nav {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 0%;
+    padding-top: 20px;
+  }
+}
+
+.titulo_index {
+  display: none;
+}
+@media (min-width: 992px) {
+  .titulo_index {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.p_recreo,
+.flex__p_about,
+.la_actividad,
+.p_workshop,
+.p_teambuilding,
+.p_kids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 20px;
+}
+@media (min-width: 576px) {
+  .p_recreo,
+  .flex__p_about,
+  .la_actividad,
+  .p_workshop,
+  .p_teambuilding,
+  .p_kids {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .p_recreo,
+  .flex__p_about,
+  .la_actividad,
+  .p_workshop,
+  .p_teambuilding,
+  .p_kids {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-areas: "contacto" "gif" "favicon";
+  justify-items: center;
+}
+@media (min-width: 992px) {
+  footer {
+    height: 120px;
+    display: grid;
+    grid-template-areas: "contacto gif favicon";
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.footer__favicon {
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (min-width: 992px) {
+  .footer__favicon {
+    height: 20%;
+  }
+}
+
+.flex__contacto {
+  grid-area: contacto;
+}
+
+.form_contacto {
+  width: 220px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .form_contacto {
+    width: 470px;
+  }
+}
+
+.form_contacto {
+  grid-area: form;
+}
+
+.page_contacto {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "titulo" "form";
+  justify-items: center;
+  gap: 5px;
+  padding-bottom: 200px;
+  padding-top: 0%;
+}/*# sourceMappingURL=style.css.map */
